@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import './StudentForm.css'; 
+
 
 function StudentForm() {
   const [student, setStudent] = useState({
@@ -21,9 +23,9 @@ function StudentForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="student-form">
       <label>
-        Name:
+        Name changed:
         <input
           type="text"
           name="name"
@@ -32,7 +34,7 @@ function StudentForm() {
         />
       </label>
       <label>
-        Email:
+        Email changed:
         <input
           type="email"
           name="email"
@@ -41,7 +43,7 @@ function StudentForm() {
         />
       </label>
       <label>
-        Phone Number:
+        Phone Number changed:
         <input
           type="text"
           name="phoneNumber"
